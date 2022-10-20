@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet"> 
+</head>
+    <body>
+        <header id="header" class="container">            
+           <div class="container headerContainer">
+            <h1 id="titleHeader" class="container">Lista de cumpleaños</h1>
+            <p class="headerParagraph"> ¡Agrega a tu lista los cumpleaños que no queres olvidar!</p>
+           </div>
+            <form id="searchBar" class="container">
+                <input id="searchText" name="searchText" type="text">
+                <button type="button" id="searchButton">Buscar</button>
+                <button type="button" id="reinitButton">Reiniciar</button>
+
+            </form>
+        </header>
+        <main id="main" class="container">
+            <section id="birthdaySection" class="container">
+                <ul class="birthdayList">
+                </ul>
+            </section>
+            <aside id="newDateSection" class="container">
+                <label id="labelName" for="name">Nombre:</label>
+                <input id=name name="name" type="text" autocomplete="off">
+                <label id="labelDate" for="date">Fecha:</label>
+                <input id=date name="date" type="date">
+                <button id="send">Guardar fecha</button>
+            </asside>
+            
+        </main>
+
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
