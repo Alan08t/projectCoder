@@ -164,6 +164,43 @@ body {
 }
 
 
+.headerContainer {
+    width: 100%;
+    flex-direction: column;
+    height: 50%;
+}
+
+
+#searchBar {
+    width: 90%;
+    height: 10%;
+}
+
+#searchButton {
+    width: 20vw;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+#searchText {
+    border: 1px solid;
+    height: 3rem;
+}
+
+#reinitButton {
+    width: 20vw;
+    height: 3rem;
+    background-color: red;
+    color: white;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+
+
 
 
 
