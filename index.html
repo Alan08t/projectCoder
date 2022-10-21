@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderProject</title>
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head>
     <body>
         <header id="header" class="container">            
            <div class="container headerContainer">
             <h1 id="titleHeader" class="container">Lista de cumpleaños</h1>
-            <p class="headerParagraph"> ¡Agrega a tu lista los cumpleaños que no queres olvidar!</p>
+            <p class="headerParagraph"> ¡Agrega a tu lista los cumpleaños que no querés olvidar!</p>
            </div>
             <form id="searchBar" class="container">
                 <input id="searchText" name="searchText" type="text">
@@ -29,9 +30,10 @@
                 </ul>
             </section>
             <aside id="newDateSection" class="container">
-                <label id="labelName" for="name">Nombre:</label>
-                <input id=name name="name" type="text" autocomplete="off">
-                <label id="labelDate" for="date">Fecha:</label>
+                <div class="labelContainer container">
+                    <label id="labelName" for="name">Nombre: </label>
+                    <input id=name name="name" type="text" autocomplete="off">
+                </div>
                 <input id=date name="date" type="date">
                 <button id="send">Guardar fecha</button>
                 <button id="delete">Borrar todo</button>

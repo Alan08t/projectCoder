@@ -57,7 +57,7 @@ const updateView = () => {
       <span id='${index}' ' class='deleteItem'>X</span>
     </div>
       </li>
-    <hr class='hrItems'>`;
+    `;
   });
 }
 
@@ -92,12 +92,14 @@ $send.addEventListener("click", () => {
 });
 
 const search = () => {
-  let data = $searchText.value
+  if($searchText.value == '') return null
+  else {
+    let data = $searchText.value
   let newArray = dataObj.filter(element => element.name == data)
 
   dataObj = newArray
   updateView()
-  console.log('si funque')
+  }
 
 }
 
