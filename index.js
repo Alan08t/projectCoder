@@ -5,7 +5,6 @@ const $send = document.querySelector("#send");
 const $searchButton = document.querySelector('#searchButton')
 const $searchText = document.querySelector('#searchText')
 const $reinitButton = document.querySelector('#reinitButton')
-const $delete = document.querySelector('#delete')
 
 
 
@@ -47,28 +46,19 @@ const updateView = () => {
   //Vaciamos la lista que contiene los items
   $birthdayList.innerHTML = null;
   //Y para cada elemento del array agregamos un nuevo item
-  dataObj.forEach((element, index) => {
+  dataObj.forEach((element) => {
     date = new Date(element.date);
 
-
-
     $birthdayList.innerHTML += `
-    <li class="listItem container">
-    <p class='spanContainer container'>
-      <span class="listItemSpan">Nombre: ${element.name}</span>
-      <span class="listItemSpan">Cumpleaños: ${date.toUTCString().slice(5, 11)}</span>
-      <span class="listItemSpan"> Tiene: ${getEdad(date)} años.</span>
-    </p>
-    <div class='itemDiv container'>
-      <span id='${index}' ' class='deleteItem'>X</span>
-    </div>
-      </li>
-    <hr class='hrItems'>`;
+    <li class="listItem container"><span class="listItemSpan">Nombre: ${
+      element.name
+    }</span> <span class="listItemSpan">Cumpleaños: ${date
+      .toUTCString()
+      .slice(5, 11)}</span><span class="listItemSpan"> Tiene: ${getEdad(
+      date
+    )} años.</span>
+        </li><hr class='hrItems'>`;
   });
-
-
-
-  console.log('updateView')
 };
 
 updateView();
@@ -100,6 +90,8 @@ $send.addEventListener("click", () => {
 });
 
 
+let newArray = dataObj.filter(element => element.name == 'Alan')
+
 
 
 const search = () => {
@@ -108,51 +100,17 @@ const search = () => {
 
   dataObj = newArray
   updateView()
-  console.log('si funque')
+
 }
 
 const reinit = () => {
-  $searchText.value = ''
-  if(localStorage.getItem('dates')){
+  
   data = localStorage.getItem("dates");
   data = JSON.parse(data);
   dataObj = data;
-  }else dataObj = []
   updateView()
 
 }
 
-const deleteAll = () => {
-
-  confirm('¿Estas seguro? Esto borrara todos los datos') ?
-  localStorage.removeItem('dates') :
-  null
-
-  reinit()
-}
-
-
-
-const $deleteItem = document.querySelectorAll('.deleteItem')
-
-
-
-
-const deleteItem = (e) => {
-
-  if(confirm('¿Quieres elimiar esta fecha?')){
-  let index = e.target.id
-  e.stopPropagation()
-  dataObj.splice(index, index + 1)
-  saveData()
-  location.reload()
-}else null
-}
-
 $searchButton.addEventListener('click', search)
 $reinitButton.addEventListener('click', reinit)
-$delete.addEventListener('click', deleteAll)
-$deleteItem.forEach(function(item) {
-  item.addEventListener('click', deleteItem)
-  
-});
