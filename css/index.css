@@ -1,6 +1,5 @@
 
-
-
+/* GENERAL SETTINGS */
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +24,16 @@ body {
   align-items: center;
 }
 
+#main {
+  width: 100%;
+  height: 70%;
+  flex-direction: column;
+}
+
+
+/* HEADER */
+
+
 #header {
   width: 100%;
   height: 30%;
@@ -33,11 +42,6 @@ body {
   justify-content: space-around;
 }
 
-#main {
-  width: 100%;
-  height: 70%;
-  flex-direction: column;
-}
 
 #titleHeader {
   width: 60vw;
@@ -53,6 +57,62 @@ body {
   color: white;
 }
 
+
+
+.headerContainer {
+  width: 100%;
+  flex-direction: column;
+  height: 50%;
+}
+
+#searchBar {
+  width: 90%;
+  height: 20%;
+}
+
+#searchButton {
+  width: 20vw;
+  height: 100%;
+  background-color: white;
+  color: black;
+  margin-left: 4%;
+  cursor: pointer;
+  font-size: 4vw;
+}
+
+
+#searchButton:hover {
+  background-color: rgb(179, 179, 179);
+}
+
+
+#searchText {
+  border: 1px solid #67e3ffb9;
+  height: 100%;
+  font-size: 2vw;
+  width: 30%;
+  color: white;
+}
+
+#reinitButton {
+  font-size: 4vw;
+  width: 20vw;
+  height: 100%;
+  background-color: #67e3ffb9;
+  color: black;
+  margin-left: 4%;
+  cursor: pointer;
+}
+
+#reinitButton:hover {
+  background-color: #4698aab9;
+}
+
+
+
+
+/* BIRTHDAY SECTION */
+
 #birthdaySection {
   width: 100%;
   height: 50%;
@@ -62,7 +122,7 @@ body {
 }
 
 .birthdayList {
-  width: 90%;
+  width: 100%;
   height: 100%;
   list-style: none;
   margin: none;
@@ -70,38 +130,84 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
+  border: 3px solid white;
+  border-left: none;
 }
+
+/* ITEMS */
 
 .listItem {
   margin: 5% 0 5% 0;
   font-weight: 600;
   font-family: "Courier New", Courier, monospace;
-  width: 80%;
+  width: 100%;
   height: auto;
   padding: 0.5rem;
-  border-radius: 1rem;
-  box-shadow: 3px 3px 4px #032e38;
   justify-content: space-between;
   background-color: black;
   color: white;
 }
 
 .listItemSpan {
-  height: 33%;
-  width: 80%;
-  font-size: 3.5vw;
+  height: 100%;
+  width: 70%;
+  font-size: 4.2vw;
   font-family: "Rubik", sans-serif;
   display: flex;
-  align-items: flex-start;
-  justify-content: start;
-  align-self: flex-start;
+  align-items: flex-end;
+  justify-content: end;
   padding: 2%;
+  text-align: end;
 }
 
-.hrItems {
-  border: 1px solid black;
-  width: 70%;
+.birthdaySpan{
+  font-size: 10vw;
+  align-items: flex-end;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
 }
+
+.signSpan {
+  font-weight: bold;
+}
+
+.nameAndDateSpan{
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.spanContainer {
+  width: 80%;
+  height: 10vh;
+  flex-flow: row nowrap;
+}
+
+
+.itemDiv {
+  width: 20%;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: end;
+}
+
+.deleteItem {
+  cursor: pointer;
+  padding: 10%;
+  font-size: 2vw;
+  transition: all 0.2s ease;
+}
+
+.deleteItem:hover {
+  font-size: 3vw;
+}
+
+
+/* NEW DATE SECTION */
 
 #newDateSection {
   width: 100%;
@@ -145,8 +251,9 @@ body {
 
 }
 #send {
-  font-size: 6vw;
-  padding: 4%;
+  font-size: 5vw;
+  width: 40%;
+  height: 6vh;
   margin-bottom: 2%;
   background-color: rgb(79, 241, 79);
   cursor: pointer;
@@ -154,70 +261,21 @@ body {
   transition: all 0.1s ease-in;
 }
 
+
+#send:hover {
+  background-color: rgb(51, 138, 51);
+}
+
 #delete {
   color: black;
-  padding: 5%;
+  width: 40%;
+  height: 6vh;
   white-space: nowrap;
   background-color: rgba(255, 36, 36, 0.808);
   font-size: 3.6vw;
 }
 
 
-.headerContainer {
-  width: 100%;
-  flex-direction: column;
-  height: 50%;
-}
-
-#searchBar {
-  width: 90%;
-  height: 20%;
-}
-
-#searchButton {
-  width: 20vw;
-  height: 100%;
-  background-color: white;
-  color: black;
-  margin-left: 4%;
-  cursor: pointer;
-  font-size: 4vw;
-}
-
-
-#searchText {
-  border: 1px solid #67e3ffb9;
-  height: 100%;
-  font-size: 2vw;
-  width: 30%;
-  color: white;
-}
-
-#reinitButton {
-  font-size: 4vw;
-  width: 20vw;
-  height: 100%;
-  background-color: #67e3ffb9;
-  color: black;
-  margin-left: 4%;
-  cursor: pointer;
-}
-
-.spanContainer {
-  width: 80%;
-  height: 10vh;
-  flex-flow: column nowrap;
-}
-
-.itemDiv {
-  width: 20%;
-  height: 100%;
-  align-items: flex-start;
-  justify-content: end;
-}
-
-.deleteItem {
-  cursor: pointer;
-  padding: 10%;
-  font-size: 2vw;
+#delete:hover {
+  background-color: rgba(167, 26, 26, 0.808);
 }

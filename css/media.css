@@ -27,10 +27,9 @@
     margin: 2% 0 2% 0;
     font-weight: 600;
     font-family: "Courier New", Courier, monospace;
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 27vh;
     padding: 0.5rem;
-    border-radius: 1rem;
     box-shadow: 3px 3px 4px #032e38;
     justify-content: space-between;
     background-color: black;
@@ -39,7 +38,7 @@
 
   .listItemSpan {
     height: 33%;
-    width: 80%;
+    width: 70%;
     font-size: 1.7vw;
    
   }
@@ -76,10 +75,14 @@
   }
   #send {
     font-size: 3vw;
+    width: 60%;
+    height: 10vh;
   }
 
   #delete {
     font-size: 1.8vw;
+    width: 60%;
+    height: 10vh;
   }
 
   #searchButton {
@@ -98,4 +101,29 @@
   .spanContainer {
     width: 80%;
   }
+
+
+.birthdaySpan{
+  font-size: 8vw;
+  width: 100%;
+  height: 100%;
+}
+
+.signSpan {
+  font-weight: bold;
+}
+
+.nameAndDateSpan{
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.spanContainer {
+  width: 80%;
+  height: 21vh;
+  flex-flow: row nowrap;
+}
 }
