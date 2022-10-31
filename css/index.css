@@ -193,7 +193,7 @@
   cursor: pointer;
   color: #ffee4a;
   transition: all 0.1s ease-in;
-  border: 10px solid #03001c;
+  border: 3px solid #03001c;
 }
 
 #send:hover {
@@ -205,7 +205,7 @@
   height: 20%;
   white-space: nowrap;
   font-size: 3.6vw;
-  border: 10px solid rgb(141, 2, 2);
+  border: 3px solid rgb(141, 2, 2);
 }
 
 #delete:hover {
