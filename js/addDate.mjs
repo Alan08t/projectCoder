@@ -13,8 +13,21 @@ const addDate = () => {
 
   //Validando los datos de entrada
   if ($name.value === "" || $date.value === "") {
-    alert("El nombre y la fecha no pueden estar vacios.");
+    // alert("El nombre y la fecha no pueden estar vacios.");
+    // return null
+
+    Swal.fire({
+      title: 'Campos obligatorios',
+      text: 'El nombre y la fecha no pueden estar bavios',
+      icon: 'warning',
+      confirmButtonText: 'Ok',
+    })
+
     return null
+
+
+
+
   } else {
     newDate.name = $name.value;
     newDate.date = new Date($date.value);

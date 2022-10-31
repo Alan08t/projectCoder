@@ -7,13 +7,16 @@
   background-color: transparent;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+  color: #ffee4a;
+  text-shadow: 1px 1px 1px black;
 }
 
-body {
+#body {
   text-align: center;
   width: 100vw;
   height: 100vh !important;
   overflow: hidden;
+  background-color: #03001c;
 }
 
 .container {
@@ -42,13 +45,13 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 8vw;
   white-space: nowrap;
-  color: black;
+  color: #ffee4a;
 }
 
 .headerParagraph {
   font-size: 4.2vw;
   font-family: "Rubik", sans-serif;
-  color: black;
+  color: #ffee4a;
 }
 
 .headerContainer {
@@ -70,8 +73,8 @@ body {
   border: 1px solid black;
   width: 60vw;
   font-size: 4vw;
-  color: black;
-  background-color: white;
+  color: #ffee4a;
+  background-color: #77477e;
   height: 40%;
 }
 
@@ -82,11 +85,10 @@ body {
   display: flex;
   min-height: 50%;
   max-height: 50%;
-  border-bottom: 1px solid black;
 }
 
 .birthdayList {
-  width: 100%;
+  width: 95%;
   max-height: 100%;
   min-height: 100%;
   list-style: none;
@@ -96,23 +98,18 @@ body {
   flex-flow: column;
   align-items: center;
   border-left: none;
-  background-color: black;
-  border: 1px solid black;
+  border: 2px solid #77477e;
 }
 
 /* ITEMS */
 
 .listItem {
-  margin: 1% 0%;
   font-weight: 600;
   font-family: "Courier New", Courier, monospace;
-  width: 95%;
+  width: 100%;
   height: auto;
-  padding: 0.5rem;
   justify-content: space-between;
   background-color: black;
-  color: white;
-  border: 3px solid white;
   box-shadow: 3px 3px 4px #032e38;
 
 }
@@ -127,6 +124,7 @@ body {
   justify-content: start;
   padding: 2%;
   text-align: start;
+  color: #fe9600;
   
 }
 
@@ -136,7 +134,7 @@ body {
   justify-content: end;
   width: 70%;
   height: auto;
-  border-right: 2px solid white;
+  border-right: 2px solid #77477e;
 
 }
 
@@ -173,6 +171,7 @@ body {
   padding: 10%;
   font-size: 5vw;
   transition: all 0.2s ease;
+  color: #77477e;
 }
 
 /* NEW DATE SECTION */
@@ -191,27 +190,25 @@ body {
   width: 80%;
   height: 6vh;
   margin-bottom: 2%;
-  background-color: rgb(79, 241, 79);
   cursor: pointer;
-  color: black;
+  color: #ffee4a;
   transition: all 0.1s ease-in;
+  border: 10px solid #03001c;
 }
 
 #send:hover {
-  background-color: rgb(51, 138, 51);
 }
 
 #delete {
-  color: black;
+  color: #ffee4a;
   width: 80%;
   height: 6vh;
   white-space: nowrap;
-  background-color: rgba(255, 36, 36, 0.808);
   font-size: 3.6vw;
+  border: 10px solid rgb(141, 2, 2);
 }
 
 #delete:hover {
-  background-color: rgba(167, 26, 26, 0.808);
 }
 
 /* FORM STYLES */
@@ -223,36 +220,37 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #2A0944;
+  background-color: #77477e;
   border-radius: 2rem;
 }
 
 #asideForm div {
   width: 100%;
-  height: auto;
+  height: 20%;
 }
 
 #asideForm div input {
-  border: 1px solid white;
+  border: 1px solid black;
   height: 100%;
-  width: 60%;
+  width: 80%;
   font-size: 8vw;
-  color: black;
-  background-color: white;
+  color: #ffee4a;
+  background-color: #03001c ;
 }
 
 #asideForm div input::placeholder {
-  color: black;
+  color: #ffee4a;
   opacity: 1;
 }
 
 #asideForm input {
   font-size: 8vw;
   cursor: pointer;
-  color: black;
-  background-color: white;
-  border: 1px solid white;
-  width: 60%;
+  color: #ffee4a;
+  background-color: #03001c ;
+  border: 1px solid black;
+  width: 80%;
+  height: 20%;
 }
 
 
@@ -261,11 +259,11 @@ body {
 
 /* THEMES */
 .darkTheme {
-  background-color: rgb(80, 80, 80);
+  background-color: #03001c;
   color: white;
 
 }
 .lightTheme {
-  background-color: white;
+  background-color: #ffee4a;
   color: black;
 }

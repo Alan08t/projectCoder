@@ -33,14 +33,14 @@
   .birthdayList {
     max-height: 80%;
     min-height: 80%;
+    height: 80%;
     list-style: none;
     margin: none;
     overflow: scroll;
     display: flex;
     flex-flow: column;
     align-items: center;
-    border: none;
-    border-left: none;
+    justify-content: flex-start;
   }
 
   .listItem {
@@ -52,11 +52,12 @@
   .listItemSpan {
     height: 33%;
     width: 70%;
-    font-size: 1.7vw;
+    font-size: 2.4vw;
   }
 
   #newDateSection {
     width: 40%;
+    justify-content: flex-start;
   }
   #send {
     font-size: 1.5vw;
@@ -120,28 +121,35 @@
 
 #asideForm div {
   width: 100%;
-  height: auto;
 }
 
 #asideForm div input {
-  border: 1px solid white;
+  border: 1px solid black;
   height: 100%;
   width: 60%;
-  font-size: 3vw;
-  color: white;
+  font-size: 2.5vw;
+  background-color: #03001c ;
+  color: #ffee4a;
+  padding: 2%;
 }
 
-#asideForm div input::placeholder {
-  color: white;
-  opacity: 1;
-}
 
 #asideForm input {
-  font-size: 3vw;
+  font-size: 2.5vw;
   cursor: pointer;
-  color: white;
-  border: 1px solid white;
+  color: #ffee4a;
+  border: 1px solid black;
   width: 60%;
+  padding: 2%;
+  background-color: #03001c ;
+  
+}
+
+
+#asideForm input::placeholder {
+  opacity: .7;
+  color: #fe9600;
+
 }
 
 }
