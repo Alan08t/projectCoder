@@ -1,4 +1,8 @@
 @media screen and (min-width: 1178px) {
+  body {
+    height: 100vh !important;
+  }
+
   #header {
     width: 100%;
     height: 30%;
@@ -20,75 +24,59 @@
   #birthdaySection {
     width: 60%;
     height: 100%;
-    border-bottom: 10px solid black;
+    display: flex;
+    min-height: 100%;
+    max-height: 100%;
+    align-items: baseline;
+  }
+
+  .birthdayList {
+    max-height: 80%;
+    min-height: 80%;
+    list-style: none;
+    margin: none;
+    overflow: scroll;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: none;
+    border-left: none;
   }
 
   .listItem {
-    margin: 2% 0 2% 0;
-    font-weight: 600;
+    font-weight: 300;
     font-family: "Courier New", Courier, monospace;
-    width: 100%;
-    height: 27vh;
-    padding: 0.5rem;
     box-shadow: 3px 3px 4px #032e38;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
   }
 
   .listItemSpan {
     height: 33%;
     width: 70%;
     font-size: 1.7vw;
-   
   }
 
-  .spanContainer {
-    width: 80%;
-    height: 20vh;
-    flex-flow: column nowrap;
-  }
-  
   #newDateSection {
     width: 40%;
-    padding: 2% 0 0 2%;
-  }
-
-  .labelContainer {
-    width: 100%;
-    height: 5vh;
-  }
-  
-  #labelName {
-    font-size: 2vw;
-  }
-
-  #name {
-    margin-bottom: 2%;
-    cursor: pointer;
-    width: 15vw;
-    font-size: 2vw;
-  }
-
-  #date {
-    font-size: 2.5vw;
   }
   #send {
-    font-size: 3vw;
+    font-size: 1.5vw;
     width: 60%;
-    height: 10vh;
+    height: 5vh;
   }
 
   #delete {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     width: 60%;
-    height: 10vh;
+    height: 5vh;
+  }
+
+  #searchBar {
+    align-items: center;
   }
 
   #searchButton {
     font-size: 2vw;
   }
-
 
   #searchText {
     font-size: 2vw;
@@ -102,28 +90,58 @@
     width: 80%;
   }
 
+  .birthdaySpan {
+    font-size: 7vw;
+    height: 15vh;
+    font-weight: 600;
+  }
 
-.birthdaySpan{
-  font-size: 8vw;
-  width: 100%;
-  height: 100%;
-}
+  .signSpan {
+    font-weight: bold;
+  }
 
-.signSpan {
-  font-weight: bold;
-}
-
-.nameAndDateSpan{
-  flex-direction: column;
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
+  .nameAndDateSpan {
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
 
 
-.spanContainer {
+  /* FORM STYLES */
+
+#asideForm {
   width: 80%;
-  height: 21vh;
-  flex-flow: row nowrap;
+  height: 60%;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
 }
+
+#asideForm div {
+  width: 100%;
+  height: auto;
+}
+
+#asideForm div input {
+  border: 1px solid white;
+  height: 100%;
+  width: 60%;
+  font-size: 3vw;
+  color: white;
+}
+
+#asideForm div input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+#asideForm input {
+  font-size: 3vw;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  width: 60%;
+}
+
 }

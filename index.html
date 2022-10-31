@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoderProject</title>
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header id="header" class="container">
@@ -24,25 +24,41 @@
         </p>
       </div>
       <form id="searchBar" class="container">
-        <input id="searchText" name="searchText" type="text" />
-        <button type="button" id="searchButton">Buscar</button>
-        <button type="button" id="reinitButton">Reiniciar</button>
+        <input
+          autocomplete="off"
+          id="searchText"
+          class="searchInput"
+          name="searchText"
+          type="search"
+          list="names"
+          placeholder="Buscar"
+        />
+        <datalist id="names"> </datalist>
       </form>
     </header>
     <main id="main" class="container">
       <section id="birthdaySection" class="container">
-        <ul class="birthdayList"></ul>
+        <ul id="birthdayList" class="birthdayList"></ul>
       </section>
       <aside id="newDateSection" class="container">
-        <div class="labelContainer container">
-          <label id="labelName" for="name">Nombre: </label>
-          <input id="name" name="name" type="text" autocomplete="off" />
-        </div>
-        <input id="date" name="date" type="date" value="2000-01-01" />
-        <button id="send">Agregar</button>
-        <button id="delete">Borrar todo</button>
+        <form id="asideForm">
+          <div class="labelContainer container">
+            <input
+              id="name"
+              name="name"
+              placeholder="Nombre"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+          <input id="date" name="date" type="date" value="2000-01-01" />
+          <button class="send" id="send">Agregar</button>
+          <button class="deleteAll" id="delete">Borrar todo</button>
+        </form>
       </aside>
     </main>
-    <script src="index.js"></script>
+    <script src="js/index.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
   </body>
 </html>
