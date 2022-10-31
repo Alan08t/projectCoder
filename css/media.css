@@ -121,6 +121,7 @@
 
 #asideForm div {
   width: 100%;
+  height: 20%;
 }
 
 #asideForm div input {
@@ -142,8 +143,18 @@
   width: 60%;
   padding: 2%;
   background-color: #03001c ;
+  height: 20%;
   
 }
+
+#asideForm button {
+  font-size: 2.5vw;
+  width: 60%;
+  padding: 2%;
+  height: 20%;
+  
+}
+
 
 
 #asideForm input::placeholder {

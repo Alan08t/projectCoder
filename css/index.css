@@ -188,7 +188,7 @@
 #send {
   font-size: 3.6vw;
   width: 80%;
-  height: 6vh;
+  height: 20%;
   margin-bottom: 2%;
   cursor: pointer;
   color: #ffee4a;
@@ -202,7 +202,7 @@
 #delete {
   color: #ffee4a;
   width: 80%;
-  height: 6vh;
+  height: 20%;
   white-space: nowrap;
   font-size: 3.6vw;
   border: 10px solid rgb(141, 2, 2);
