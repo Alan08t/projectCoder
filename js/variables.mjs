@@ -10,7 +10,7 @@ export const $delete = document.querySelector("#delete");
 export const $deleteItem = document.querySelectorAll(".deleteItem");
 export let newDate;
 export let dataObj = [];
-
+let cloneData = {...dataObj}
 export const _setDataObj = (_dataObj) => {
     dataObj = _dataObj
 }

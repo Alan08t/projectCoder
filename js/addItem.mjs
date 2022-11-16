@@ -1,9 +1,7 @@
 import { $birthdayList } from "./variables.mjs"
 
 
-
-
-
+// Inserta un nuevo elemento a la lista
 
 const addItem  = (item) => {
 

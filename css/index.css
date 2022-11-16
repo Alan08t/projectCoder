@@ -196,9 +196,6 @@
   border: 3px solid #03001c;
 }
 
-#send:hover {
-}
-
 #delete {
   color: #ffee4a;
   width: 80%;
@@ -206,9 +203,6 @@
   white-space: nowrap;
   font-size: 3.6vw;
   border: 3px solid rgb(141, 2, 2);
-}
-
-#delete:hover {
 }
 
 /* FORM STYLES */

@@ -1,10 +1,7 @@
-const deleteAll = () => {
-    // confirm("¿Estas seguro? Esto borrara todos los datos")
-    //   ? localStorage.removeItem("dates")
-    //   : null;
-  
-    // recoveryData();
 
+//Borramos todos los elementos del array y los datos del localstorage
+
+const deleteAll = () => {
 
     Swal.fire({
       title: 'Eliminar todo',

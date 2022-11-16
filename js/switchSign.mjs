@@ -1,3 +1,6 @@
+// Con los datos obtenidos del date introducido por el usuario
+// le asignamos el signo correspondiente
+
 const switchSign = (month, day) => {
 
   let sign;

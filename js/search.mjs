@@ -1,6 +1,8 @@
 import updateView from "./updateView.js";
 import { dataObj, _setDataObj } from "./variables.mjs";
 
+// Busca coincidencias en el array y actualiza los datos mostrados en pantalla
+
 const search = (word) => {
     
   let results = []

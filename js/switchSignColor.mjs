@@ -1,3 +1,7 @@
+// Con los datos obtenidos del date introducido por el usuario
+// le asignamos el color correspondiente
+
+
 const switchSignColor = (month, day) => {
 
   let color;

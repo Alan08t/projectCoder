@@ -1,18 +1,10 @@
 import saveData from "./saveData.mjs";
 import { dataObj } from "./variables.mjs";
 
+
+// Elimina uno de los elementos del array que el usuario haya seleccionado
+
 const deleteItem = (e) => {
-    // if (confirm("¿Quieres elimiar esta fecha?")) {
-    //   e.stopPropagation();
-    //   let index = e.target.id;
-    //   let copyDataObj = dataObj.slice()
-    //   copyDataObj.splice(index, 1);
-
-
-
-    //   saveData(copyDataObj)
-    //   // location.reload();
-    // } else null;
 
 
     Swal.fire({
